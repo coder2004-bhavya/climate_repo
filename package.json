@@ -1,0 +1,21 @@
+{
+  "name": "climate_change",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Climate Change dashboard: React+TS frontend, Node+TS backend, Flask ML service",
+  "scripts": {
+    "dev": "npm run dev -w @climate/frontend",
+    "dev:backend": "npm run dev -w @climate/backend",
+    "dev:frontend": "npm run dev -w @climate/frontend",
+    "dev:all": "npm run dev -w @climate/backend",
+    "build": "npm run build -w @climate/frontend && npm run build -w @climate/backend",
+    "start": "npm run start -w @climate/backend",
+    "lint": "npm run lint -w @climate/frontend && npm run lint -w @climate/backend",
+    "typecheck": "npm run typecheck -w @climate/frontend && npm run typecheck -w @climate/backend"
+  },
+  "workspaces": [
+    "backend",
+    "frontend",
+    "packages/*"
+  ]
+}
